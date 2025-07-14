@@ -1,1 +1,11 @@
-
+* {box-sizing: border-box; }
+body {background-color: #C7E8F8;
+      color: #290F83;
+      font-family: Helvetica, Arial, sans-serif;
+      margin: 0;
+     }
+#wrapper { background-color: #290D89;
+          padding: 0;
+         }
+header { background-color: #C7E8F8:;
+        background-image: 
