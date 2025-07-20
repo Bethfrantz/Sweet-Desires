@@ -4,20 +4,23 @@ body {background-color: #B2F5F8;
       font-family: Helvetica, Arial, sans-serif;
       margin: 0;
      }
-#wrapper { background-color: #2CEEF6;
+#wrapper { background-color: #B2F5F8;
           padding: 0;
          }
-header { background-color: #B2F5F8;
-        background-image: url(images/artful.JPG);
+header { background-color: #79c4d7;
+        background-image: url(images/present2.JPG);
         background-repeat: no-repeat;
-        color: #B2F5F8;
+        color: #290F83;
         height: 128px;
-        padding-left: 105px;
+        padding-left: 75px;
         padding-top: 5px;
         padding-bottom: 5px;
-       }
+        
+        background-position: left;
+}
+
 header a{text-decoration: none;}
-header a:link {color: #B2F5F8;}
+header a:link {color: #72e3e9;}
 header a:visited {color: #B2F5F8;}
 header a:hover {color: #290D89;}
 h1 {font-size: 3em; }
@@ -61,4 +64,69 @@ img {padding-left: 10px;
 #homehero {height: 300px;
           background-image: url(images/hero.jpg);
           background-repeat: no-repeat;
-          background-size: 100% 100%;}
+          background-size: 100% ;
+          background-position: center;
+          }
+#herowedding {height: 300px;
+           background-image: url(images/mycake.JPG);
+background-repeat: no-repeat;
+           background-size: 100%;
+           background-position: center;
+  }
+#heroevent {height: 300px;
+           background-image: url(images/pinkpresent.JPG);
+           background-repeat: no-repeat;
+           background-size: 100%;
+           background-position: center;}
+#herodessert {height: 300px;
+             background-image: url(images/cupcakes.JPG);
+             background-repeat: no-repeat;
+             background-size: 100%;
+             background-position: center;
+             }
+#mobile {display: inline;}
+#desktop {display: none;}
+footer {background-color: #70C4D7;
+       font-size: .8em;
+       font-style: italic;
+       text-align: center;
+       padding-bottom: 1em;
+       border-top: 2px solid #290F83;}
+table {margin: auto;
+      width: 90%;
+      border-spacing: 0;}
+th, td {padding: 10px;}
+
+
+@media (min-width: 600px){
+          header{padding-left: 0;
+                text-align: center;}
+          h1 {font-size: 3em;}
+          nav ul {flex-flow: row nowrap;
+                 justify-content: space-around;}
+          nav li { border-bottom: none;}
+#flow {display: flex;
+      flex-direction: row;}
+          #mobile {display: none;}
+          #desktop {display: inline;}
+.details {display: flex;
+         flex-direction: row;}
+h4 {margin-left: 10%;
+   margin-right: 10%;}
+}
+@media (min-width: 1024px){
+          @supports (display: grid){
+                    header {grid-area: header;}
+                    nav {grid-area: nav;}
+                    main {grid-area: main;}
+                    footer {grid-area: footer;}
+                    #wrapper {display: grid;
+                             grid-template:
+                                       "header header"
+                             "nav main"
+                             "footer footer"
+                             /200px;}
+                    nav ul {flex-direction: column;}
+                    header {background-image: url(images/present2.JPG);}
+          }
+}
