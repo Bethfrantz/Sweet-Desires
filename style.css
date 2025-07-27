@@ -102,7 +102,9 @@ table {margin: auto;
       width: 90%;
       border-spacing: 0;}
 th, td {padding: 10px;}
-
+form{
+      text-align: center;
+}
 
 @media (min-width: 600px){
           header{padding-left: 0;
