@@ -23,15 +23,8 @@ header a:visited {color: #B2F5F8;}
 header a:hover {color: #290D89;}
 h1 {font-size: 3em; }
 h2 {color: #290D89;}
-h3, dt {color: #290D89;}
-h4 {background-color: #B2F5F8;
-   font-size: 1.2em;
-   padding-left: .5em;
-   padding-bottom: 0;
-   text-transform: uppercase;
-   border-bottom: 1px solid #290D89;
-   clear: left;
-   }
+h3 {color: #290D89;}
+
 nav {text-align: center;
     font-size: 1.5em;
     }
