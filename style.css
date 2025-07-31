@@ -17,7 +17,7 @@ header { background-color: #79c4d7;
         padding-bottom: 5px;
        }
 
-header a{text-decoration: none;}
+header a{text-decoration: none; text-align: center;}
 header a:link {color: #72e3e9;}
 header a:visited {color: #B2F5F8;}
 header a:hover {color: #290D89;}
