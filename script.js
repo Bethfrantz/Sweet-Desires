@@ -1,5 +1,5 @@
 //Elisabeth Hoyt-Frantz, SDEV 153, Final Project, August 1, 2025
-<script>
+
 document.getElementById("contactForm").addEventListener("submit", function(e) 
                                                         [
    e.preventDefault();
@@ -12,4 +12,4 @@ alert("Thank you for your message, ${name}!\n\nYour message:
       "${message}"/n/nI will get back to you at ${email}!"}!);
    this.reset();
 });
-</script>
+
