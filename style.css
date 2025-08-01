@@ -21,6 +21,7 @@ header a{text-decoration: none; text-align: center;}
 header a:link {color: #72e3e9;}
 header a:visited {color: #B2F5F8;}
 header a:hover {color: #290D89;}
+header a{padding-bottom: 5px;}
 h1 {font-size: 3em; text-align: center;}
 h2 {color: #290D89; text-align: center;}
 h3 {color: #290D89; text-align: center;}
