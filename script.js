@@ -1,11 +1,13 @@
 //Elisabeth Hoyt-Frantz, SDEV 153, Final Project, August 1, 2025
-document.getElementById("emailForm").addEventListener("submit", function(event)
-   event.preventDefault();
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) 
+                                                        [
+   e.preventDefault();
 
-const name=document.getElementById("name").value.trim();
-const email = document.getElementById("email").value.trim();
-const subject = document.getElementById("subject").value.trim();
-const messge = documen.getElementById("message").value.trim();
+const name=document.getElementById("name").value;
+const email = document.getElementById("email").value;
+const subject = document.getElementById("subject").value;
+const message = document.getElementById("message").value;
 
 if (name === "" || email === "" || subject === "" || message === ""){
   alert("All fields are required.");
@@ -22,10 +24,8 @@ console.log(Email:A", email);
 console.log("Subject:", subject);
 console.log("Message:", message);
 
-alert("Form submitted successfully! (Data logged to console)");
+alert("Thank you for your message, ${name}!\n\nYour message: 
+      "${message}"/n/nI will get back to you at ${email}!"}!);
+   this.reset();
 });
-
-function isValidEmail(email) {
-  const emailRegex =/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailRegex.test(email);
-}
+</script>
