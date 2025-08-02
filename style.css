@@ -47,7 +47,7 @@ main {background-color: #B2F5F8;
      display: block;
      padding: 0 0 2em 0;
      }
-h2, h3, p, div, ul, {padding-left: 1em; padding-right: 1em; }
+h2, h3, p, div, ul {padding-left: 1em; padding-right: 1em; }
 main ul {padding-left: 2em;}
 .details {padding-left: 20%;
          padding-right: 20%;
