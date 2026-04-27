@@ -1,52 +1,69 @@
 <!DOCTYPE html>
-<!--Elisabeth Hoyt-Frantz, SDEC 153, Final Project, August 1, 2025-->
 <html lang="en">
-  <head>
-    <title>Sweet Desires</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Desires | Home</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
   <div id="wrapper">
-    <header>
-      <img src="images/presentclip.jpg" alt="Yellow and pink round present cake" style="display: none;">
-  <h1><a href="index.html">Sweet Desires</a></h1>
-      </header>
-    <nav>
+
+    <header class="site-header">
+      <h1 class="logo">
+        <a href="index.html">Sweet Desires</a>
+      </h1>
+    </header>
+
+    <nav class="main-nav" aria-label="Main Navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="weddings.html">Weddings</a></li>
         <li><a href="events.html">Special Events</a></li>
         <li><a href="desserts.html">Desserts</a></li>
         <li><a href="contact.html">Contact Me</a></li>
       </ul>
     </nav>
+
     <main>
-      <div id="homehero">
-      </div>
-   
-    <h2>From My Kitchen to Yours!</h2>
-    <p>Welcome to Sweet Desires, where handcrafted sweetness meets heartfelt baking!From a home kitchen, the passion goes into creating memorable deliciousness!
-    </p>
-    <h2>Sweet Desires specializes in:</h2>
-    <ul>
-      <li><a href="weddings.html">Wedding Cakes</a></li>
-      <li><a href="events.html">Special Events</a></li>
-      <li><a href="desserts.html">Desserts</a></li>
-    </ul>
-    <div>
-      10202 Vine Street<br>
-      Plymouth, IN 46563<br>
-      <a id="mobile" href="tel:888-123-1234">888-123-1234</a><span id="desktop">888-123-1234</span><br><br>
-    </div>
-  </main>
-    <footer>
- Copyright &copy; 2025 Sweet Desires<br>
-      <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+      <!-- Hero Section -->
+      <section class="hero hero-home" role="img" aria-label="Handcrafted bakery treats"></section>
+
+      <section class="content-section">
+        <h2>From My Kitchen to Yours</h2>
+        <p>
+          Welcome to Sweet Desires, where handcrafted sweetness meets heartfelt baking.  
+          Every dessert is made with care from a cozy home kitchen, bringing warmth, flavor,  
+          and a touch of joy to every celebration.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h2>Sweet Desires Specializes In</h2>
+        <ul>
+          <li><a href="weddings.html">Wedding Cakes</a></li>
+          <li><a href="events.html">Special Events</a></li>
+          <li><a href="desserts.html">Desserts</a></li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <address>
+          10202 Vine Street<br>
+          Plymouth, IN 46563<br>
+          <a id="mobile" href="tel:888-123-1234">888-123-1234</a>
+          <span id="desktop">888-123-1234</span>
+        </address>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Sweet Desires</p>
+      <p><a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a></p>
     </footer>
-  </div>  
+
+  </div>
 </body>
 </html>
