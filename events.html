@@ -1,82 +1,80 @@
 <!DOCTYPE html>
-<!--Elisabeth Hoyt-Frantz, SDEV 153, Final Project, August 1, 2025-->
 <html lang="en">
-  <head>
-    <title>Sweet Desires</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Desires | Special Events</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
   <div id="wrapper">
-    <header>
-      <img src="images/presentclip.jpg" alt="Yellow and pink round present cake" style="display: none;">
-  <h1><a href="index.html">Sweet Desires</a></h1>
-      </header>
-    <nav>
+
+    <header class="site-header">
+      <h1 class="logo">
+        <a href="index.html">Sweet Desires</a>
+      </h1>
+    </header>
+
+    <nav class="main-nav" aria-label="Main Navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="weddings.html">Weddings</a></li>
-        <li><a href="events.html">Special Events</a></li>
+        <li><a href="events.html" aria-current="page">Special Events</a></li>
         <li><a href="desserts.html">Desserts</a></li>
         <li><a href="contact.html">Contact Me</a></li>
       </ul>
     </nav>
-    <main>
-        <div id="heroevent">
-       </div>
-        <h2>Special Events Gallery</h2>
-        <div id="flow">
-          <table>
-            <tr>
-              <th>Birthday</th>
-              <td></td>
-              
-            </tr>
-            <tr>
-              <td><img src="images/firstbday.JPG" alt="First Birthday" height="100" Width="100"></td>
-              <td><img src="images/funwithpink.JPG" alt="3-tiered Pink Cake" height="100" width="100"></td>
-            </tr>
-            <tr>
-              <td><img src="images/minecraft.JPG" alt="Minecraft Cake" height="100" width="100"></td>
-              <td><img src="images/monkeys.JPG" alt="3-tiered Monkey Cake" height="100" width="100"></td>
-            </tr>
-            <tr>
-              <th >Baby Shower</th>
-              <td></td>
-            </tr>
-            <tr>
-              <td><img src="images/babybump.JPG" alt="Baby Bump Cake" height="100" width="100"></td>
-              <td><img src="images/babyshower.JPG" alt="2-tiered Baby Shower Cake" height="100" width="100"></td>
-             
-            </tr>
-            <tr>
-              <th >Celebrations</th>
-              <td></td>
-            </tr>
-            <tr>
-              <td><img src="images/tiger.JPG" alt="Warsaw Tiger Cake" height="100" width="100"></td>
-              <td><img src="images/morefun.JPG" alt="3-tiered Monkey Cake" height="100" width="100"></td>
-            </tr>
-            <tr>
-              <td><img src="images/santa.JPG" alt="Santa" height="100" width="100"></td>
-              <td><img src="images/pinkpresent.JPG" alt="2-tiered Pink Present Cake" height="100" width="100"></td>
-            </tr>
-            <tr>
-              <td><img src="images/ladybug.JPG" alt="2-tiered Ladybug Cake" height="100" width="100"></td>
-              <td></td>
-              
-            </tr>
-          </table>
-        </div>
-      </main>
-      <footer>
-        Copyright &copy; 2025 Sweet Desires<br>
-        <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
-      </footer>
-    </div>
-  </body>
-</html>
 
+    <main>
+      <!-- Hero -->
+      <section class="hero hero-event" role="img" aria-label="Special event cakes"></section>
+
+      <section class="content-section">
+        <h2>Special Events Gallery</h2>
+        <p>From birthdays to baby showers to celebrations of every kind, Sweet Desires creates handcrafted cakes that bring joy to every occasion.</p>
+      </section>
+
+      <!-- Birthday Cakes -->
+      <section class="content-section">
+        <h3>Birthday Cakes</h3>
+        <div class="gallery-grid">
+          <img src="images/firstbday.JPG" alt="First birthday cake">
+          <img src="images/funwithpink.JPG" alt="Three-tier pink birthday cake">
+          <img src="images/minecraft.JPG" alt="Minecraft-themed birthday cake">
+          <img src="images/monkeys.JPG" alt="Three-tier monkey birthday cake">
+        </div>
+      </section>
+
+      <!-- Baby Shower Cakes -->
+      <section class="content-section">
+        <h3>Baby Shower Cakes</h3>
+        <div class="gallery-grid">
+          <img src="images/babybump.JPG" alt="Baby bump cake">
+          <img src="images/babyshower.JPG" alt="Two-tier baby shower cake">
+        </div>
+      </section>
+
+      <!-- Celebration Cakes -->
+      <section class="content-section">
+        <h3>Celebration Cakes</h3>
+        <div class="gallery-grid">
+          <img src="images/tiger.JPG" alt="Warsaw Tigers celebration cake">
+          <img src="images/morefun.JPG" alt="Three-tier monkey celebration cake">
+          <img src="images/santa.JPG" alt="Santa-themed cake">
+          <img src="images/pinkpresent.JPG" alt="Pink present cake">
+          <img src="images/ladybug.JPG" alt="Two-tier ladybug cake">
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Sweet Desires</p>
+      <p><a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a></p>
+    </footer>
+
+  </div>
+</body>
+</html>
