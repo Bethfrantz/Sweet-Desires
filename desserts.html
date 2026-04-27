@@ -1,94 +1,106 @@
 <!DOCTYPE html>
-<!--Elisabeth Hoyt-Frantz, SDEV153, Final Project, August 1, 2025-->
 <html lang="en">
-  <head>
-    <title>Sweet Desires</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Desires | Desserts</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
   <div id="wrapper">
-    <header>
-      <img src="images/presentclip.jpg" alt="Yellow and pink round present cake" style="display: none;">
-  <h1><a href="index.html">Sweet Desires</a></h1>
-      </header>
-    <nav>
+
+    <header class="site-header">
+      <h1 class="logo">
+        <a href="index.html">Sweet Desires</a>
+      </h1>
+    </header>
+
+    <nav class="main-nav" aria-label="Main Navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="weddings.html">Weddings</a></li>
         <li><a href="events.html">Special Events</a></li>
-        <li><a href="desserts.html">Desserts</a></li>
+        <li><a href="desserts.html" aria-current="page">Desserts</a></li>
         <li><a href="contact.html">Contact Me</a></li>
       </ul>
     </nav>
+
     <main>
-        <div id="herodessert">
-        </div>
-        
+      <!-- Hero -->
+      <section class="hero hero-dessert" role="img" aria-label="Cupcakes and desserts"></section>
+
+      <section class="content-section">
         <h2>Desserts</h2>
         <p>The possibilities are endless with Sweet Desires. Can you choose your favorite?</p>
-        <div id="flow">
-          
-          <table>
-            <tr>
-              <th>Cake</th>
-            <td><em>Cake Sizes</em></td>
-              <td> 6"<br>$15</td>
-            <td>8"<br>$20</td>
-         <td>12"<br>$30</td>
-         
-         <td>14"<br>$35</td>
-         <td>Sheet Cake<br>$25</td>   
-          </tr>
-          
-            <tr>
-              <th>Filling</th>
-              <td>Chocolate Ganache, Cookies & Cream, Berry Compote, Peanut Crunch, Cream Cheese, or Candy Bar.</td>
-              <td><em>All Filling</em></td>
-              <td>$15</td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-         
-           <tr>
-            <th>Cupcakes</th>
-             <td>White cake, yellow cake, chocolate cake, strawberry cake, marble cake, Italian wedding cake,spice cake, carrot cake, or cheesecake</td>
-            <td><em>One Dozen</em></td>
-             <td>$15</td>
-             <td></td>
-              <td></td>
-              <td></td>
-          </tr>
-         <tr>
-            <th>Cookies</th>
-            <td>Chocolate Chip, Peanut Butter, Sugar, Snickerdoodle, Christmas Spice, No Bake, Oatmeal Raisin, and Pumpkin</td>
-         <td><em>One Dozen</em></td>
-           <td>$10</td>
-           <td></td>
-              <td></td>
-              <td></td>
-          </tr>
-         <tr>
-            <th>Brownies</th>
-           <td>Chocolate Chip, Double Chocolate Fudge, Peanut Butter, and Triple Chocolate</td>
-            <td><em>One Dozen</em></td>
-           <td>$10</td>
-           <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
-          
+      </section>
+
+      <!-- Cakes -->
+      <section class="content-section">
+        <h3>Cakes</h3>
+        <p><em>Available Sizes & Pricing</em></p>
+
+        <div class="menu-grid">
+          <div class="menu-item"><strong>6"</strong><br>$15</div>
+          <div class="menu-item"><strong>8"</strong><br>$20</div>
+          <div class="menu-item"><strong>12"</strong><br>$30</div>
+          <div class="menu-item"><strong>14"</strong><br>$35</div>
+          <div class="menu-item"><strong>Sheet Cake</strong><br>$25</div>
         </div>
-      </main>
-      <footer>
-        Copyright &copy; 2025 Sweet Desires<br>
-        <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
-      </footer>
-    </div>
-  </body>
+
+        <p class="menu-description">
+          Cake flavors include white, yellow, chocolate, strawberry, marble, Italian wedding cake, spice, carrot, or cheesecake.
+        </p>
+      </section>
+
+      <!-- Filling -->
+      <section class="content-section">
+        <h3>Filling</h3>
+        <p>Chocolate ganache, cookies & cream, berry compote, peanut crunch, cream cheese, or candy bar.</p>
+
+        <div class="menu-grid">
+          <div class="menu-item"><strong>All Fillings</strong><br>$15</div>
+        </div>
+      </section>
+
+      <!-- Cupcakes -->
+      <section class="content-section">
+        <h3>Cupcakes</h3>
+        <p>Available in all cake flavors.</p>
+
+        <div class="menu-grid">
+          <div class="menu-item"><strong>One Dozen</strong><br>$15</div>
+        </div>
+      </section>
+
+      <!-- Cookies -->
+      <section class="content-section">
+        <h3>Cookies</h3>
+        <p>Chocolate chip, peanut butter, sugar, snickerdoodle, Christmas spice, no‑bake, oatmeal raisin, and pumpkin.</p>
+
+        <div class="menu-grid">
+          <div class="menu-item"><strong>One Dozen</strong><br>$10</div>
+        </div>
+      </section>
+
+      <!-- Brownies -->
+      <section class="content-section">
+        <h3>Brownies</h3>
+        <p>Chocolate chip, double chocolate fudge, peanut butter, and triple chocolate.</p>
+
+        <div class="menu-grid">
+          <div class="menu-item"><strong>One Dozen</strong><br>$10</div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Sweet Desires</p>
+      <p><a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a></p>
+    </footer>
+
+  </div>
+</body>
 </html>
