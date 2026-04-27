@@ -1,60 +1,68 @@
 <!DOCTYPE html>
-<!--Elisabeth Hoyt-Frantz, SDEV 153, Final Project, August 1, 2025-->
 <html lang="en">
-  <head>
-    <title>Sweet Desires</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Desires | Weddings</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-  <div id="wrapper">
-    <header>
-      <img src="images/presentclip.jpg" alt="Yellow and pink round present cake" style="display: none;">
-  <h1><a href="index.html">Sweet Desires</a></h1>
-      </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="weddings.html">Weddings</a></li>
-        <li><a href="events.html">Special Events</a></li>
-        <li><a href="desserts.html">Desserts</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-      </ul>
-    </nav>
-    <main>
-        <div id="herowedding"></div>
-       
-    <h2>Weddings at Sweet Desires</h2>
-    <p>There are many possibilties when choosing a wedding cake. Indulge in your creativity and Sweet Desires will bring your dreams to life.</p>
-    <h3>Wedding Cake Options</h3>
-    <div id="flow">
-      <table>
+  <header class="site-header">
+    <h1 class="logo">
+      <a href="index.html">Sweet Desires</a>
+    </h1>
+  </header>
+
+  <nav class="main-nav" aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="weddings.html" aria-current="page">Weddings</a></li>
+      <li><a href="events.html">Special Events</a></li>
+      <li><a href="desserts.html">Desserts</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero hero-wedding" role="img" aria-label="Wedding cake display"></section>
+
+    <section class="content-section">
+      <h2>Weddings at Sweet Desires</h2>
+      <p>
+        There are many possibilities when choosing a wedding cake. Indulge in your creativity and Sweet Desires will bring your dreams to life.
+      </p>
+    </section>
+
+    <section class="content-section">
+      <h3>Wedding Cake Options</h3>
+
+      <table class="options-table">
         <tr>
-          <th>Cake Flavor</th>
-          <td>White cake, yellow cake, chocolate cake, strawberry cake, marble cake, Italian wedding cake,spice cake, carrot cake, or cheesecake</td>
+          <th scope="row">Cake Flavor</th>
+          <td>White, yellow, chocolate, strawberry, marble, Italian wedding cake, spice, carrot, or cheesecake</td>
         </tr>
         <tr>
-          <th>Frosting</th>
-          <td>Buttercream, Chocolate buttercream, Peanut Butter Buttercream, Royal Icing, Marshmallow fondant, or Cream Cheese.</td>
+          <th scope="row">Frosting</th>
+          <td>Buttercream, chocolate buttercream, peanut butter buttercream, royal icing, marshmallow fondant, or cream cheese</td>
         </tr>
         <tr>
-          <th>Filling</th>
-          <td>Chocolate Ganache, Cookies & Cream, Berry Compote, Peanut Crunch, Cream Cheese, or Candy Bar.</td>
-      </tr>
+          <th scope="row">Filling</th>
+          <td>Chocolate ganache, cookies & cream, berry compote, peanut crunch, cream cheese, or candy bar</td>
+        </tr>
         <tr>
-          <th>Toppings</th>
-        <td>Fresh Fruit, Chocolate, Sprinkles, or edible beads.</td>
-      </tr>
+          <th scope="row">Toppings</th>
+          <td>Fresh fruit, chocolate, sprinkles, or edible beads</td>
+        </tr>
       </table>
-    </div>
+    </section>
   </main>
-    <footer>
-      Copyright &copy; 2025 Sweet Desires<br>
-      <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
-    </footer>
-  </div>
-  </body>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Sweet Desires</p>
+    <p><a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a></p>
+  </footer>
+</body>
 </html>
