@@ -1,133 +1,185 @@
-/*Elisabeth Hoyt-Frantz, SDEV 153, Final Project, August 1, 2025*/
-* {box-sizing: border-box; }
-body {background-color: #B2F5F8;
-      color: #290F83;
-      font-family: Helvetica, Arial, sans-serif;
-      margin: 0;
-     }
-#wrapper { background-color: #B2F5F8;
-          padding: 0;
-         }
-header { background-color: #79c4d7;
-       background-image: url(images/presentclip.jpg);
-        background-repeat: no-repeat;
-        color: #290F83;
-        height: 130px;
-        padding-left: 120px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-       }
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-header a{text-decoration: none; text-align: center;}
-header a:link {color: #72e3e9;}
-header a:visited {color: #B2F5F8;}
-header a:hover {color: #290D89;}
-header a{padding-bottom: 5px;}
-h1 {font-size: 3em; text-align: center;}
-h2 {color: #290D89; text-align: center;}
-h3 {color: #290D89; text-align: center;}
+/* Cozy Color Palette */
+:root {
+  --cream: #FFF8F2;
+  --soft-blue: #B2F5F8;
+  --accent-blue: #79C4D7;
+  --deep-blue: #290F83;
+  --deep-blue-light: #290D89;
+  --nav-border: #290F83;
+  --text: #2A1A1A;
+}
 
-nav {text-align: center;
-    font-size: 1.5em;
-    }
-nav a {text-decoration: none;}
-nav a:link {color: #290F83;}
-nav a:visited {color: #290D60;}
-nav a:hover {color: #290D40;}
-nav ul {display: flex;
-       flex-direction: column;
-       font-size: 1.25em;
-       list-style-type: none;
-       margin: 0;
-       padding: 0;}
-nav li {border-bottom: 1px solid #290F83;
-       padding: .5em 1em;
-       width: 100%;}
-main {background-color: #B2F5F8;
-     display: block;
-     padding: 0 0 2em 0;
-     }
-h2, h3, p, div, ul {padding-left: 1em; padding-right: 1em; }
-main ul {padding-left: 2em;}
-.details {padding-left: 20%;
-         padding-right: 20%;
-         overflow: auto;}
-img {padding-left: 10px;
- padding-right: 10px;}
-#homehero {height: 300px;
-          background-image: url(images/hero.jpg);
-          background-repeat: no-repeat;
-          background-size: 100% ;
-          background-position: center;
-          }
-#herowedding {height: 300px;
-           background-image: url(images/mycake.JPG);
-background-repeat: no-repeat;
-           background-size: 100%;
-           background-position: center;
+/* Body */
+body {
+  background-color: var(--cream);
+  color: var(--text);
+  font-family: "Helvetica", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: var(--accent-blue);
+  background-image: url(images/presentclip.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 120px;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+header .logo a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: var(--deep-blue-light);
+  font-weight: bold;
+}
+
+/* Navigation */
+nav {
+  background-color: var(--cream);
+  border-bottom: 2px solid var(--nav-border);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+nav li {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--nav-border);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--deep-blue);
+  font-size: 1.25rem;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--deep-blue-light);
+}
+
+/* Hero Sections */
+.hero {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-wedding {
+  background-image: url(images/mycake.JPG);
+}
+
+.hero-home {
+  background-image: url(images/hero.jpg);
+}
+
+.hero-event {
+  background-image: url(images/pinkpresent.JPG);
+}
+
+.hero-dessert {
+  background-image: url(images/cupcakes.JPG);
+}
+
+.hero-contact {
+  background-image: url(images/kitty.JPG);
+}
+
+/* Content Sections */
+.content-section {
+  padding: 2rem 1.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2, h3 {
+  color: var(--deep-blue-light);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Table */
+.options-table {
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+}
+
+.options-table th,
+.options-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--accent-blue);
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  background-color: var(--accent-blue);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 2px solid var(--nav-border);
+}
+
+/* Responsive Layout */
+@media (min-width: 700px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
   }
-#heroevent {height: 300px;
-           background-image: url(images/pinkpresent.JPG);
-           background-repeat: no-repeat;
-           background-size: 100%;
-           background-position: center;}
-#herodessert {height: 300px;
-             background-image: url(images/cupcakes.JPG);
-             background-repeat: no-repeat;
-             background-size: 100%;
-             background-position: center;
-             }
-#herocontact {height: 300px;
-             background-image: url(images/kitty.JPG);
-             background-repeat: no-repeat;
-             background-size: 100%;
-             background-position: center;
-             }
-#mobile {display: inline;}
-#desktop {display: none;}
-footer {background-color: #70C4D7;
-       font-size: .8em;
-       font-style: italic;
-       text-align: center;
-       padding-bottom: 1em;
-       border-top: 2px solid #290F83;}
-table {margin: auto;
-      width: 75%;
-      border-spacing: 0;}
-th, td {padding: 10px;}
-form{
-      text-align: center;
-      width: 75%;
+
+  nav li {
+    border-bottom: none;
+    border-right: 1px solid var(--nav-border);
+  }
+
+  nav li:last-child {
+    border-right: none;
+  }
 }
 
-@media (min-width: 600px){
-          header{padding-left: 0;
-                text-align: center;}
-          h1 {font-size: 3em;}
-          nav ul {flex-flow: row nowrap;
-                 justify-content: space-around;}
-          nav li { border-bottom: none;}
-#flow {display: flex;
-      flex-direction: row;}
-          #mobile {display: none;}
-          #desktop {display: inline;}
-.details {display: flex;
-         flex-direction: row;}
+@media (min-width: 1024px) {
+  #wrapper {
+    display: grid;
+    grid-template:
+      "header header"
+      "nav main"
+      "footer footer"
+      / 220px 1fr;
+  }
 
-}
-@media (min-width: 1024px){
-          @supports (display: grid){
-                    header {grid-area: header;}
-                    nav {grid-area: nav;}
-                    main {grid-area: main;}
-                    footer {grid-area: footer;}
-                    #wrapper {display: grid;
-                             grid-template:
-                                       "header header"
-                             "nav main"
-                             "footer footer"
-                             /200px;}
-                    nav ul {flex-direction: column;}
-                    header {background-image: url(images/presentclip.jpg);}
-          }
+  nav {
+    grid-area: nav;
+    border-right: 2px solid var(--nav-border);
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  footer {
+    grid-area: footer;
+  }
 }
