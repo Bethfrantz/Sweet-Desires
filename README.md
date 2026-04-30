@@ -82,7 +82,7 @@ Refactoring table‑based layouts into modern CSS Grid structures
 Managing assets and organizing a scalable front‑end project
 
 🌐 Live Demo
-bethfrantz.github.io
+[bethfrantz.github.io](https://bethfrantz.github.io/Sweet-Desires/)
 
 📬 Contact
 If you’d like to learn more about this project or my work, feel free to reach out:
