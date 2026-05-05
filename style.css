@@ -200,9 +200,7 @@ footer {
 }
 
 /* Base layout (mobile-first) */
-#wrapper {
-  display: block;
-}
+
 
 /* Responsive Layout */
 @media (min-width: 700px) {
@@ -221,35 +219,6 @@ footer {
   }
 }
 
-@media (min-width: 1024px) {
-  #wrapper {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    grid-template-areas:
-      "header header"
-      "nav main"
-      "footer footer";
-    min-height: 100vh;
-  }
 
-  header {
-    grid-area: header;
-  }
-
-  nav {
-    grid-area: nav;
-    padding: 2rem 1rem;
-    border-right: 2px solid var(--nav-border);
-    height: 100%;
-  }
-
-  main {
-    grid-area: main;
-    padding: 2rem;
-  }
-
-  footer {
-    grid-area: footer;
-  }
-}
+  
 
